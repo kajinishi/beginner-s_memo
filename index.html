@@ -1,11 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf8">
-    <!-- ↓cssファイル -->
-    <meta http-equiv="content-style-type" content="text/css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- ↑css -->
     <!-- ↓syntaxhighlighter_3.0.83
     <script type="text/javascript" src="../syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
     <script type="text/javascript" src="../syntaxhighlighter_3.0.83/scripts/shBrushCpp.js"></script>
@@ -16,18 +11,27 @@
       SyntaxHighlighter.config.space = ' '; // &nbsp;じゃなく半角スペースにする
     </script>
      ↑syntaxhighlighter_3.0.83 -->
+    <meta http-equiv="content-type" content="text/html; charset=utf8">
+    <!-- ↓cssファイル -->
+    <meta http-equiv="content-style-type" content="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/dropdown.css">
+    <!-- ↑css -->
     <!-- ↓js -->
-    <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/menue.js"></script>
     <!-- ↑js -->
     <title>吹き出し</title>
   </head>
   <body> <!-- link="tomato" vlink="orchid" alink="hotpink" -->
-    <nav> <!-- ↓ドロップダウンメニュー -->
+<!-- <nav>↓ドロップダウンメニュー
+
+  -->
       <ul>
-      	<li><a href="#">ホームへ</a></li>
+        <li><span class='demoSpan1'><a href='#' style='background-color:rgba(249, 121, 4, 0.3);' id='gotohome' class='demoSpan2'></a></span></li>
       	<li>
-      		<a href="#">アルゴリズムの備忘録</a>
+      		<a href="#">アルゴリズム</a>
       		<ul>
       			<li><a href="#">動的計画法</a></li>
       			<li><a href="#">ダイクストラ</a></li>
@@ -35,10 +39,9 @@
       		</ul>
       	</li>
       	<li>
-      		<a href="#">プログラミング言語の備忘録</a>
+      		<a href="#">プログラミング言語</a>
       		<ul>
-      			<li><a href="#">DXライブラリ</a></li>
-      			<li>
+            <li>
       				<a href="#">c</a>
       				<ul>
       					<li><a href="#">環境設定</a></a></li>
@@ -46,39 +49,37 @@
       					<li><a href="#">関数</a></li>
       				</ul>
       			</li>
-      			<li>
-      				<a href="#">自分用備忘録</a>
-      				<ul>
-      					<li><a href="#">homebrew</a></li>
-      					<li><a href="#">ツムツム</a></li>
-      					<li><a href="#">git</a></li>
-      				</ul>
-      			</li>
+      			<li><a href="#">c++</a></li>
       		</ul>
       	</li>
-      	<li><a href="#">nav</a></li>
-      	<li><a href="#">nav</a></li>
+        <li>
+          <a href="#">自分用備忘録</a>
+          <ul>
+            <li><a href="#">homebrew</a></li>
+            <li><a href="#">ツムツム</a></li>
+            <li><a href="#">git</a></li>
+          </ul>
+        </li>
+      	<li><a href="#">雑記</a></li>
       </ul>
-    </nav> <!-- ↓ドロップダウンメニュー -->
+    <!-- </nav>  ↓ドロップダウンメニュー -->
     <div id="mainWrap"> <!-- ↓メインウィンドウ -->
-      <!--
-      <div class="balloonl"><span>こんにちは<br> 改行したらどうなるかな？<br>さらにしたら?<br>からの〜？</span></div>
-      <div style="clear:both;"></div>
+
+      <script type="text/javascript">
+        photo(1,"頼む<br>人生に123456789回目くらいのお願いだ");
+        photo(0,"できててくれ");
+        photo(1,"右からこんにちは<br>崩れないかチェック","r");
+      </script>
       <div class="balloonr"><span>FF外から失礼します<br>ブサイクすぎワロタwww<br>FF外から失礼しました</span></div>
       <div style="clear:both;"></div>
-    -->
-    <script type="text/javascript">
-      photo(1,"頼む<br>人生に123456789回目くらいのお願いだ");
-      photo(0,"できててくれ");
-      photo(1,"右からこんにちは<br>崩れないかチェック","r");
-    </script>
-    <div class="balloonr"><span>FF外から失礼します<br>ブサイクすぎワロタwww<br>FF外から失礼しました</span></div>
-    <div style="clear:both;"></div>
-    <p>この文どうなる?</p>
+      <p>この文どうなる?</p>
     </div> <!-- ↑メインウィンドウ -->
     <div id="sideWrap"> <!-- ↓サブウィンドウ -->
       サブウィンドだよ(｡･ ω<)ゞ<br>
       なんか追加してみる？
     </div> <!-- ↑サブウィンドウ -->
+    <script>
+      dropdown();
+    </script>
   </body>
 </html>

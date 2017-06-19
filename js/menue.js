@@ -1,0 +1,38 @@
+function dropdown(){
+  document.writeln(" <nav> <!-- ↓ドロップダウンメニュー --> ");
+  document.writeln(" <ul> ");
+  document.writeln("         <li style='background-color:rgba(249, 121, 4, 0.3);'><span class='demoSpan1'><a href='#'  id='gotohome' class='demoSpan2'>ホームへ</a></span></li> ");
+  document.writeln("       	<li> ");
+  document.writeln("       		<a href=\"#\">アルゴリズム</a> ");
+  document.writeln("       		<ul> ");
+  document.writeln("       			<li><a href=\"#\">動的計画法</a></li> ");
+  document.writeln("       			<li><a href=\"#\">ダイクストラ</a></li> ");
+  document.writeln("       			<li><a href=\"#\">二分探索</a></li> ");
+  document.writeln("       		</ul> ");
+  document.writeln("       	</li> ");
+  document.writeln("       	<li> ");
+  document.writeln("       		<a href=\"#\">プログラミング言語</a> ");
+  document.writeln("       		<ul> ");
+  document.writeln("             <li> ");
+  document.writeln("       				<a href=\"#\">c</a> ");
+  document.writeln("       				<ul> ");
+  document.writeln("       					<li><a href=\"#\">環境設定</a></a></li> ");
+  document.writeln("       					<li><a href=\"#\">変数</a></li> ");
+  document.writeln("       					<li><a href=\"#\">関数</a></li> ");
+  document.writeln("       				</ul> ");
+  document.writeln("       			</li> ");
+  document.writeln("       			<li><a href=\"#\">c++</a></li> ");
+  document.writeln("       		</ul> ");
+  document.writeln("       	</li> ");
+  document.writeln("         <li> ");
+  document.writeln("           <a href=\"#\">自分用備忘録</a> ");
+  document.writeln("           <ul> ");
+  document.writeln("             <li><a href=\"#\">homebrew</a></li> ");
+  document.writeln("             <li><a href=\"#\">ツムツム</a></li> ");
+  document.writeln("             <li><a href=\"#\">git</a></li> ");
+  document.writeln("           </ul> ");
+  document.writeln("         </li> ");
+  document.writeln("       	<li><a href=\"#\">雑記</a></li> ");
+  document.writeln("       </ul> ");
+  document.writeln(" </nav> <!-- ↓ドロップダウンメニュー --> ");
+}
