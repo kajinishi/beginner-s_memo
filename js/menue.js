@@ -1,7 +1,7 @@
 function dropdown(){
   document.writeln(" <nav> <!-- ↓ドロップダウンメニュー --> ");
   document.writeln(" <ul> ");
-  document.writeln("         <li style='background-color:rgba(249, 121, 4, 0.3);'><span class='demoSpan1'><a href='#'  id='gotohome' class='demoSpan2'>ホームへ</a></span></li> ");
+  document.writeln("         <li style='background-color:rgba(223, 120, 26, 1);'><span class='demoSpan1'><a href='#'  id='gotohome' class='demoSpan2'>ホームへ</a></span></li> ");
   document.writeln("       	<li> ");
   document.writeln("       		<a href=\"#\">アルゴリズム</a> ");
   document.writeln("       		<ul> ");

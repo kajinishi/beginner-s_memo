@@ -13,6 +13,7 @@ nav ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	background-color: rgb(157, 216, 232);
 }
 nav ul::after {
 	display: block;

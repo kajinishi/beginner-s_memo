@@ -5,8 +5,8 @@ body {
     background-color: rgb(157, 216, 232);
     margin: 0;
 }
-#mainWrap { width:75%; float:left; }
-#sideWrap { width:25%; float:right; background-color: rgb(237, 237, 237);}
+#mainWrap { width:75%; float:left; margin-top: 55px;}
+#sideWrap { width:25%; float:right; background-color: rgb(237, 237, 237); margin-top: 55px;}
 /* ↓吹きだし */
 /*
 使用例
