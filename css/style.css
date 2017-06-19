@@ -1,0 +1,77 @@
+
+/* フォントの設定(参考:http://hikineet.com/font-family/) */
+body {
+    font-family: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    background-color: rgb(157, 216, 232);
+    margin: 0;
+}
+#mainWrap { width:75%; float:left; }
+#sideWrap { width:25%; float:right; background-color: rgb(237, 237, 237);}
+/* ↓吹きだし */
+/*
+使用例
+<div class="balloonr"><span>文</span></div>
+<div style="clear:both;"></div> <!-- ←続けた時にレイアウトが崩れないために必要 -->
+*/
+.balloonl {
+  display: inline-block;
+  background-color: #fff;
+  padding: 7px;
+  margin-left: 5px;
+  position: relative;
+}
+.balloonl:after {
+  border-right: 6px solid #fff;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  content: '';
+  margin-top: -10px;
+  position: absolute;
+  left: -6px;
+  top: 50%;
+}
+.balloonr {
+  display: inline-block;
+  background-color: #fff;
+  padding: 7px;
+  margin-right: 5px;
+  position: relative;
+  float: right;
+}
+.balloonr:after {
+  border-left: 6px solid #fff;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  content: '';
+  margin-top: -10px;
+  position: absolute;
+  right: -6px;
+  top: 50%;
+}
+/* ↑吹き出し */
+
+/* ↓背景固定でスクロールすると文字だけ移動するようなやつ(圧倒的語彙力) */
+/* 参考 : http://coliss.com/articles/build-websites/operation/css/css-alternate-fixed-scroll-backgrounds-by-codyhouse.html
+   サンプル:
+  <!-- boederの色をbodyに合わせる h1のpaddingで適当に画面調節 -->
+  <div class="fixed-bg" style="background-image: url('画像のパス'); border: solid 1px rgb(157, 216, 232);">
+    <h1 style="color:rgb(255, 255, 255); padding:80px 80px 350px 100px;">heading</h1>
+  </div>
+  <div class="scrollcontents-bg" style="background-color:rgb(230, 184, 151); margin-top:-1px;"> <!-- 色は好みで -->
+    内容
+  </div>
+  このすぐ次にこれと同じやつするなら、border-bottom: solid 1px (bodyの色); border-top: solid 1px (上のコンテンツの色);
+  みたいなので調整してね(｡･ ω<)ゞ
+*/
+.fixed-bg {
+    min-height: 100%;
+    margin:0px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.fixed-backg.bgimg-1 { background-image: url("../img/海.jpeg"); }
+.fixed-backg.bgimg-2 { background-image: url("../img/ミミッキュ.png"); }
+.scrollcontents-bg { min-height: 100%; } /* ←スクロールするコンテンツ */
+/* ↑背景固定でスクロールすると文字だけ移動するようなやつ(圧倒的語彙力) */
