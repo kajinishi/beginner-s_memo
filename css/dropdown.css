@@ -13,7 +13,7 @@ nav ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	background-color: rgb(157, 216, 232);
+
 }
 nav ul::after {
 	display: block;
@@ -21,26 +21,29 @@ nav ul::after {
 	content: '';
 }
 nav ul li {
+
+  background-color: rgb(157, 216, 232);
 	width: 19.7%; /* ←親の幅 */
 	text-align: center;
 	position: relative;
 	float: left;
-	border: 2px solid #fff;
+	border: 2px solid white;
 }
 nav ul li:not(:first-child) {
 	border-left: none;
 }
-nav ul li:hover {
-	background-color: rgba(255,255,255,.3);
-}
+
 nav ul li a {
 	display: inline-block;
 	padding: 1em 4em;
-	color: #fff;
+	color: black;
 	line-height: 1;
 	text-align: center;
 	text-decoration: none;
 	white-space: nowrap;
+}
+nav ul li:hover {
+	background-color: rgb(92, 169, 189);
 }
 ul li:hover > ul {
 	display: block;
@@ -74,13 +77,16 @@ nav li ul li ul:before {
   width: 0;
   height: 0;
   border: 5px solid transparent;
-  border-left-color: #fff;
+  border-left-color: white;
 }
 
+
 /* ↓ホームのcss */
-.demoSpan1{display:block;position:relative;}
+.demoSpan1{display:block;position:relative;margin-left: 40%;}
 .demoSpan1:before{content:''; height:20px; width:24px; display:block; border:3px #333 solid; border-top:0; position:absolute; top:15px; left:5px;}
 .demoSpan1:after{content:''; height:16px; width:10px; display:block; position:absolute; top:21px; left:10px; background:#333;}
 .demoSpan2:before{content:''; height:7px; width:7px; display:block; position:absolute; top:23px; left:23px; background:#333;}
 .demoSpan2:after{content:''; height:24px; width:23px; border-top:5px #333 solid; border-right:5px #333 solid; position:absolute; top:4px; left:6px; transform:scale(1,0.8) rotate(-45deg);-webkit-transform:scale(1,0.8) rotate(-45deg);-moz-transform:scale(1,0.8) rotate(-45deg);-o-transform:scale(1,0.8) rotate(-45deg);-ms-transform:scale(1,0.8) rotate(-45deg);}
 /* ↑ */
+#gohome{background-color:rgb(223, 120, 26);}
+#gohome:hover{ background-color: rgb(237, 168, 64);}
