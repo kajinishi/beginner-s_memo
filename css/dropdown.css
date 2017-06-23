@@ -82,7 +82,7 @@ nav li ul li ul:before {
 
 
 /* ↓ホームのcss */
-.demoSpan1{display:block;position:relative;margin-left: 40%;}
+.demoSpan1{display:block;position:relative;margin-left: 40%; top: 4px}
 .demoSpan1:before{content:''; height:20px; width:24px; display:block; border:3px #333 solid; border-top:0; position:absolute; top:15px; left:5px;}
 .demoSpan1:after{content:''; height:16px; width:10px; display:block; position:absolute; top:21px; left:10px; background:#333;}
 .demoSpan2:before{content:''; height:7px; width:7px; display:block; position:absolute; top:23px; left:23px; background:#333;}

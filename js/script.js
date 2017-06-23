@@ -1,19 +1,14 @@
 //描写
-function photo(kind, str, memo) { //しゃべる描写の関数
+function photo(kind, str, place, memo) { //しゃべる描写の関数
   var pkind = new Array("img/teacher.png", "img/student.png"); //偶数teacher,奇数studentにしたい
-  var role = new Array("教師","生徒");
-  var rcolor = new Array("background-color:rgb(99, 181, 189);","background-color:rgb(231, 90, 90);");
   var num=pkind.length;
-
-  if(memo==null){
-    document.write("<table>");
-    document.write("<tr height=auto>");
-    document.write('<td><font><img src=' + pkind[kind] + ' alt='+role[Number(kind%2)]+' width="40" height="40"></font></td>');
-    document.write('<td><div class="balloonl" ><span style="color:black;">'+ str +'<br></span></div></td>');
-    document.write('<div style="clear:both;"></div>');
-    document.write("</tr>");
-    document.write("</table>");
-  }else if(memo=="right" || memo=="r"){
+  var role = new Array("教師","生徒");
+  //var rcolor = new Array("background-color:rgb(99, 181, 189);","background-color:rgb(231, 90, 90);");
+  /* ↓パスの変更 */
+  if(place!=null && place!=""){
+    for (var i = 0; i < pkind.length; i++) pkind[i]="../"+pkind[i];
+  }
+  if(memo=="right" || memo=="r"){
     document.write("<table align='right'>");
     document.write("<tr height=auto style='float:right;'>");
     document.write('<td><p class="balloonr" ><span style="color:black;">'+ str +'<br></span></p></td>');
@@ -22,6 +17,14 @@ function photo(kind, str, memo) { //しゃべる描写の関数
     document.write("</tr>");
     document.write("</table>");
     document.write("<br clear='all'>");
+  }else{
+    document.write("<table>");
+    document.write("<tr height=auto>");
+    document.write('<td><font><img src=' + pkind[kind] + ' alt='+role[Number(kind%2)]+' width="40" height="40"></font></td>');
+    document.write('<td><div class="balloonl" ><span style="color:black;">'+ str +'<br></span></div></td>');
+    document.write('<div style="clear:both;"></div>');
+    document.write("</tr>");
+    document.write("</table>");
   }
 }
 

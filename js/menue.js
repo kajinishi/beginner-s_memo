@@ -1,7 +1,7 @@
 function dropdown(place){//画面トップのナビゲーション
-  /* ↓パスのやつ */
+  /* ↓パスのやつ*/
   var index="",c="c/",cp="c++/",DX="DX/",Unity="Unity/",algorithm="algorithm/",poke="pokemon/";
-  if(place!=""){
+  if(place!=null && place!=""){
       index="../";
       place=="c"?c="":c="../"+c;
       place=="cp"?cp="":cp="../"+cp;
@@ -12,13 +12,13 @@ function dropdown(place){//画面トップのナビゲーション
   }
   document.writeln(" <nav> <!-- ↓ドロップダウンメニュー --> ");
   document.writeln(" <ul> ");
-  document.writeln("         <li  id='gohome' ><span class='demoSpan1'><a href='#'  id='gotohome' class='demoSpan2'>　</a></span></li> ");
+  document.writeln("         <li  id='gohome' ><span class='demoSpan1'><a href='"+index+"index.html'  id='gotohome' class='demoSpan2'>　</a></span></li> ");
 
   document.writeln("         <li> ");
   document.writeln("           <a href=\"#\">PC関連</a> ");
   document.writeln("           <ul> ");
   document.writeln("             <li><a href=\"#\">ファイル操作超入門</a></li> ");
-  document.writeln("             <li><a href=\"https://brew.sh/index_ja.html\" target='_blank'>homebrew</a></li> ");
+  document.writeln("             <li><a href='https://brew.sh/index_ja.html' target='_blank'>homebrew</a></li> ");
   document.writeln("             <li><a href=\"#\">ツムツム</a></li> ");
   document.writeln("             <li><a href=\"#\">git</a></li> ");
   document.writeln("           </ul> ");
@@ -30,8 +30,8 @@ function dropdown(place){//画面トップのナビゲーション
   document.writeln("             <li> ");
   document.writeln("       				<a href=\"#\">c</a> ");
   document.writeln("       				<ul> ");
-  document.writeln("       					<li><a href=\"#\">環境設定</a></a></li> ");
-  document.writeln("       					<li><a href=\"#\">変数</a></li> ");
+  document.writeln("       					<li><a href='"+c+"c0.html'>環境設定</a></a></li> ");
+  document.writeln("       					<li><a href= '#'>変数</a></li> ");
   document.writeln("       					<li><a href=\"#\">関数</a></li> ");
   document.writeln("       				</ul> ");
   document.writeln("       			</li> ");

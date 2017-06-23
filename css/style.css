@@ -65,7 +65,8 @@ body {
 */
 .fixed-bg {
     min-height: 100%;
-    margin:0px;
+    margin:0;
+    top: 0;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
