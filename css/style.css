@@ -7,6 +7,21 @@ body {
 }
 #mainWrap { width:75%; float:left; margin-top: 55px;}
 #sideWrap { width:25%; float:right; background-color: rgb(237, 237, 237); margin-top: 55px;}
+
+.transbutton{
+  display:block;
+  color: black;
+  background: rgba(255, 255, 255, 0.5);
+  border: solid 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding:10px;
+  font-size: medium;
+}
+.transbutton:hover{
+  color: rgba(255, 255, 255, 1);
+  background: rgba(0, 0, 0, 0.5);
+  border: solid 2px rgba(255, 255, 255, 0.5);
+}
 /* ↓吹きだし */
 /*
 使用例

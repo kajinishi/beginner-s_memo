@@ -22,16 +22,21 @@
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/menue.js"></script>
     <!-- ↑js -->
-    <title>吹き出し</title>
+    <title>初心者の備忘録</title>
   </head>
   <body> <!-- link="tomato" vlink="orchid" alink="hotpink" -->
-      <div class="fixed-bg" ><!--style="border: solid 1px rgb(157, 216, 232);"-->
-        <h1 style="color:rgb(255, 255, 255); padding:80px 80px 350px 100px;">初心者の備忘録</h1>
+      <div class="fixed-bg" style="position:relative;"><!--style="border: solid 1px rgb(157, 216, 232);"-->
+        <h1 style="color:rgb(255, 255, 255); padding:80px 80px 350px 100px; background-color:rgba(0, 0, 0, 0.4); font-family:fantasy;">Beginner's note</h1>
+
+        <button type="button" onclick="photopick();" class="transbutton" style="position:absolute; bottom: 4px; right:4px;">変更</button>
       </div>
       <script>
-        var pics=["img/背景/海.jpg","img/背景/船と海辺.jpg","img/背景/夕暮れの山.jpg","img/背景/緑と海.jpg"]; // ,"img/背景/.jpg"
-        var pic=pics[Math.floor(Math.random()*pics.length)];
-        $(".fixed-bg").css("background-image","url("+pic+")");
+        function photopick(){
+          var pics=["img/背景/海.jpg","img/背景/船と海辺.jpg","img/背景/夕暮れの山.jpg","img/背景/緑と海.jpg"]; // ,"img/背景/.jpg"
+          var pic=pics[Math.floor(Math.random()*pics.length)];
+          $(".fixed-bg").css("background-image","url("+pic+")");
+        }
+        photopick();
       </script>
       <div class="scrollcontents-bg" style=" margin-top:-1px;padding:3px 5px;">
         ばけのかわで安全に剣舞してから恐ろしい等倍範囲の霊妖技をぶち込んでくる型ですなｗｗｗ <br>
